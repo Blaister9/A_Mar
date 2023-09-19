@@ -31,10 +31,10 @@ const dishImages = [
 
         {/* Llamado a la Acción */}
         <section className="cta-section flex flex-col md:flex-row justify-between p-4 md:p-8">
-            <Link href="/reservations">
+            <Link href="/reservations" legacyBehavior>
                 <a className="bg-luxury-gold text-deep-blue py-2 px-4 rounded mb-4 md:mb-0 md:mr-4 hover:bg-modern-rose">Reserva tu mesa</a>
             </Link>
-            <Link href="/menu">
+            <Link href="/menu" legacyBehavior>
                 <a className="bg-luxury-gold text-deep-blue py-2 px-4 rounded mb-4 md:mb-0 md:mr-4 hover:bg-modern-rose">Ver nuestro menú</a>
             </Link>
         </section>

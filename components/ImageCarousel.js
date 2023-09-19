@@ -1,5 +1,7 @@
 import React from 'react';
 import Slider from "react-slick";
+import Image from 'next/image'; // si estás utilizando Next.js
+
 
 const ImageCarousel = ({ images }) => {
   const settings = {
@@ -21,7 +23,7 @@ const ImageCarousel = ({ images }) => {
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className="flex items-center justify-center overflow-hidden relative">
-            <img src={image} alt={`Dish ${index + 1}`} className="carousel-image mx-auto w-full object-contain" />
+            <Image width={1080} height={720} src={image} alt={`Dish ${index + 1}`} className="carousel-image mx-auto w-full object-contain" />
           </div>
         ))}
       </Slider>

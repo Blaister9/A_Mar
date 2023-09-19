@@ -2,8 +2,8 @@ import { MongoClient } from 'mongodb';
 
 // URI de conexión a MongoDB Atlas
 const uri = process.env.MONGODB_URI;
-console.log(uri)
-export default async (req, res) => {
+
+const saveReservation = async (req, res) => {
   if (req.method === 'POST') {
     const { name, date, time, guests } = req.body;
 
@@ -24,3 +24,5 @@ export default async (req, res) => {
     res.status(405).json({ error: 'Method not allowed' });
   }
 };
+
+export default saveReservation;
