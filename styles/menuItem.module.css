@@ -1,0 +1,16 @@
+
+.menu-item {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.menu-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.menu-item span {
+    color: #0070f3;
+    font-weight: bold;
+}
