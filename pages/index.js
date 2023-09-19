@@ -2,6 +2,7 @@ import React from 'react';
 import ImageCarousel from '../components/ImageCarousel';
 import Testimonial from '../components/Testimonial';
 import FeaturedServices from '../components/FeaturedServices';
+import Link from 'next/link';
 
 const dishImages = [
     "/dishes/0552381a-b2eb-4755-a1da-36535543106f.JPG",
@@ -30,8 +31,12 @@ const dishImages = [
 
         {/* Llamado a la Acción */}
         <section className="cta-section flex flex-col md:flex-row justify-between p-4 md:p-8">
-            <button className="bg-luxury-gold text-deep-blue py-2 px-4 rounded mb-4 md:mb-0 md:mr-4 hover:bg-modern-rose"><a href="/reservations">Reserva tu mesa</a></button>
-            <button className="bg-luxury-gold text-deep-blue py-2 px-4 rounded mb-4 md:mb-0 md:mr-4 hover:bg-modern-rose"><a href="/menu">Ver nuestro menú</a></button>
+            <Link href="/reservations">
+                <a className="bg-luxury-gold text-deep-blue py-2 px-4 rounded mb-4 md:mb-0 md:mr-4 hover:bg-modern-rose">Reserva tu mesa</a>
+            </Link>
+            <Link href="/menu">
+                <a className="bg-luxury-gold text-deep-blue py-2 px-4 rounded mb-4 md:mb-0 md:mr-4 hover:bg-modern-rose">Ver nuestro menú</a>
+            </Link>
         </section>
 
         {/* Galería de Imágenes */}
