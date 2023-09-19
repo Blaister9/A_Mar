@@ -61,7 +61,7 @@ const ReservationForm = ({ onSubmit, initialValues, theme }) => {
     }, [submitted]);
 
     if (submitted) {
-        return <div className="text-green-500">Thank you for your reservation! We're looking forward to serving you.</div>;
+        return <div className="text-green-500">Thank you for your reservation! We&apos;re looking forward to serving you.</div>;
     }
 
     return (

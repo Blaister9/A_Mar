@@ -62,7 +62,7 @@ const ContactForm = ({ onSubmit, theme }) => {
     }, [submitted]);
 
     if (submitted) {
-        return <div className="text-green-500">Thank you for your message! We'll get back to you soon.</div>;
+        return <div className="text-green-500">Thank you for your message! We&apos;ll get back to you soon.</div>;
     }
 
     return (
@@ -133,16 +133,3 @@ const ContactForm = ({ onSubmit, theme }) => {
 };
 
 export default ContactForm;
-
-/**
- * 
- * He realizado las siguientes mejoras en el componente ContactForm:
-
-Estilos de Campos: Aseguré que los campos y las etiquetas sean claramente legibles y fáciles de interactuar. Aumenté el espaciado entre los campos y utilicé estilos coherentes.
-Feedback Visual: Añadí estilos para estados de foco y error en los campos del formulario para mejorar la accesibilidad y proporcionar una retroalimentación clara al usuario. Las entradas con errores se destacan con un borde rojo, y los mensajes de error se muestran debajo del campo correspondiente.
-Área de Texto del Mensaje: Aumenté el número de filas predeterminado para el área de texto del mensaje para que los usuarios tengan más espacio para escribir.
-Botón de Enviar: Mejoré los estilos del botón y agregué una animación suave en el cambio de color al pasar el mouse por encima (hover) para mejorar la interactividad.
- * 
- * 
- * 
- */
